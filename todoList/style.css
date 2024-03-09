@@ -67,7 +67,6 @@ input[type="checkbox"]:checked + label{
     border: 1px solid #9ac57b;
     width: 20px;
     height: 20px;
-    /* text-align: center; */
     left: 0;
     top:0;
     content: url("./img/checkbox.png");
@@ -99,6 +98,14 @@ input[type="checkbox"]:checked + label{
     width: 450px;
     border: 1px solid #9ac57b;
     margin-right: 5px;
+    font-size: 20px;
+    padding-left: 15px;
+    
+}
+.input::placeholder{
+    font: 300 20px lightgrey;
+    font-style: italic;
+    vertical-align: middle;
 }
 .add_todo_btn{
     border: 1px solid #9ac57b;
