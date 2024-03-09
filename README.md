@@ -11,7 +11,7 @@ html, css, javascript 활용 <br/>
 - '+' 버튼으로 새 todo 생성
 - 체크박스로 완료 여부 구분하기
 - 'x' 버튼으로 해당 todo 삭제
-<img src="https://github.com/kimseryeong/mini_project/assets/106288108/2db6c03c-f696-49af-a2a8-796452dae1fc" alt="투두리스트 실행 화면">
+<img src="https://github.com/kimseryeong/mini_project/assets/106288108/2db6c03c-f696-49af-a2a8-796452dae1fc" alt="투두리스트 실행 화면" style="width:70%;">
 
 <br/><br/>
 
