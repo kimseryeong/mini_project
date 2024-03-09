@@ -1,5 +1,9 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
 body{
     background-color: #F8EFBA;
+    font-family: 'NanumSquare';
 }
 ul li{
     list-style: none;
@@ -24,30 +28,102 @@ ul{
     height: 550px;
     width: 70%;
 }
-.content{
-    padding-right: 30px;
-    display: flex;
-}
 .title{
     padding-left: 50px;
     font: 800 25px black;
 }
-.add_todo_btn{
-    margin: 16px 0 0 auto;
-    padding: 10px;
-    font: 600 16px black;
-    box-shadow: 5px 5px 5px #9ac57b;
-    border-radius: 9px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    left: auto;
-    height: 40px;
+.content{
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+.input-div{
+    height: 400px;
+}
+
+/* 추가된 할 일 목록 */
+.cont{
     align-items: center;
-    top: 50%;
+    margin-top: 20px;
+    display: flex;
+}
+
+/* 할 일 완료 체크 */
+input[type=checkbox]{
+    display: none;
+}
+input[type="checkbox"] + label{
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border: 1px solid #9ac57b;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+input[type="checkbox"]:checked + label{
+    border: 1px solid #9ac57b;
+    width: 20px;
+    height: 20px;
+    /* text-align: center; */
+    left: 0;
+    top:0;
+    content: url("./img/checkbox.png");
+}
+/* 할 일 내용 */
+.todo_cont{
+    padding-top: 3px;
+    font: 400 20px black;
+}
+/* 할 일 삭제 */
+.del_todo_btn{
+    padding: 0;
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #b8e994;
+    border: none;
+}
+.del_todo_btn img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 할 일 등록 창 & 버튼 */
+.input{
+    height: 50px;
+    width: 450px;
+    border: 1px solid #9ac57b;
+    margin-right: 5px;
+}
+.add_todo_btn{
+    border: 1px solid #9ac57b;
+    padding: 12px;
+    border-radius: 9px;
+    background-color: #fff;
+    height: 55px;
+    width: 55px;
+    align-items: center;
+}
+.add_todo_btn img{
+    width: 100%;
+    height: 100%;
 }
 .add_todo_btn:hover{
     border: 1px solid #9ac57b;
+    box-shadow: 2px 2px 2px #9ac57b;
 }
+
+
+
+
+
+
+/* 보류 */
 .list{
     padding: 25px;
     width: auto;

@@ -11,10 +11,20 @@
 <body>
     <div class="wrapper">
         <div class="main_container">
+            <p class="title">✔️ TodoList</p>
             <div class="content">
-                <p class="title">✔️ TodoList</p>
-                <button class="add_todo_btn">새 todo 등록</button>
-
+                <div class="input-div">
+                    <input type="text" class="input" placeholder="새로운 할 일 등록">
+                    <div class="cont">
+                        <input type="checkbox" id="chkbox">
+                        <label for="chkbox" class="todo_chk" ></label>
+                        <span class="todo_cont">목록1</span>
+                        <button type="button" class="del_todo_btn"><img src="./img/close.png" alt="X"></button>
+                        
+                    </div>
+                </div>
+                <button class="add_todo_btn"><img src="./img/add.png" alt="+"></button>
+                
             </div>
             
             <!-- <div class="list">
