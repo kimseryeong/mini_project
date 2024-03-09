@@ -1,0 +1,77 @@
+@charset "utf-8";
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+
+body{
+    background-color: #F8EFBA;
+    font-family: 'NanumSquare';
+}
+.wrapper{
+    min-height: 97dvh; /* 수직 가운데 정렬 */
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    align-items: center;
+}
+.container{
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    align-items: center;
+    height: 550px;
+    width: 60%;
+}
+
+/* 달력 타이틀 */
+.cal-head{
+    margin: 30px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.month{
+    margin-right: auto;
+    font: 900 30px black;
+}
+
+/* 달력 달 변경 */
+.btn{
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: #fff;
+    height: 25px;
+    padding: 0;
+    /* margin: 0 1px; */
+    cursor: pointer;
+}
+.btn:hover{
+    /* box-shadow: 1px 1px 1px lightgray; */
+}
+.btn-right, .btn-left{
+    width: 25px;
+    padding: 3px;
+}
+.btn-today{
+    font-size: 14px;
+    width: 55px;
+}
+.btn img{
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+.cal-body{
+    margin: 60px 30px 0 30px;
+}
+.week{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /* grid-template-columns : grid 컨테이너의 열 개수를 지정 1행에 7개의 열, 각 열의 크기를 동일하게 1분의 1 */
+}
+.day{
+    text-align: center;
+}
+.weekend{
+    color: #a6a2a2;
+}

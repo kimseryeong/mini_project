@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="cal-head">
+                <span class="month" id="current_month_year"></span>
+                <button class="btn btn-left"><img src="./img/slide_left.png" alt="<"></button>
+                <button class="btn btn-today">Today</button>
+                <button class="btn btn-right"><img src="./img/slide_right.png" alt=">"></button>
+            </div>
+            <div class="cal-body">
+                <div class="week">
+                    <div class="day weekend">SUN</div>
+                    <div class="day">MON</div>
+                    <div class="day">TUE</div>
+                    <div class="day">WED</div>
+                    <div class="day">THU</div>
+                    <div class="day">FRI</div>
+                    <div class="day weekend">SAT</div>
+                </div>
+                <div class="dates" id="dates"></div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
