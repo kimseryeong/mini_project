@@ -29,8 +29,8 @@ ul{
     width: 70%;
 }
 .title{
-    padding-left: 50px;
-    font: 800 25px black;
+    text-align: center;
+    font: 800 40px black;
 }
 .content{
     padding: 40px 0;
@@ -79,7 +79,7 @@ input[type="checkbox"]:checked + label{
 /* 할 일 삭제 */
 .del_todo_btn{
     padding: 0;
-    margin-left: 5px;
+    margin-left: 12px;
     height: 15px;
     width: 15px;
     border-radius: 50%;

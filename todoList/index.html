@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TodoList</title>
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="wrapper">
@@ -14,16 +15,10 @@
             <p class="title">✔️ TodoList</p>
             <div class="content">
                 <div class="input-div">
-                    <input type="text" class="input" placeholder="새로운 할 일 등록">
-                    <div class="cont">
-                        <input type="checkbox" id="chkbox">
-                        <label for="chkbox" class="todo_chk" ></label>
-                        <span class="todo_cont">목록1</span>
-                        <button type="button" class="del_todo_btn"><img src="./img/close.png" alt="X"></button>
-                        
-                    </div>
+                    <input type="text" id="addTodoInput" class="input" placeholder="새로운 할 일 등록">
+                    <!-- 추가된 할 일  -->
                 </div>
-                <button class="add_todo_btn"><img src="./img/add.png" alt="+"></button>
+                <button class="add_todo_btn" id="addTodoBtn" onclick="fnAddTodo()"><img src="./img/add.png" alt="+"></button>
                 
             </div>
             
