@@ -16,7 +16,7 @@ body{
     background-color: #fff;
     border-radius: 20px;
     align-items: center;
-    height: 550px;
+    height: 610px;
     width: 60%;
 }
 
@@ -32,7 +32,7 @@ body{
     font: 900 30px black;
 }
 
-/* 달력 달 변경 */
+/* 달력 월 변경 */
 .btn{
     border-radius: 5px;
     border: 1px solid lightgray;
@@ -42,14 +42,14 @@ body{
     /* margin: 0 1px; */
     cursor: pointer;
 }
-.btn:hover{
-    /* box-shadow: 1px 1px 1px lightgray; */
+.btn:active{
+    box-shadow: 1px 1px 1px lightgray;
 }
-.btn-right, .btn-left{
+.prevBtn, .nextBtn{
     width: 25px;
     padding: 3px;
 }
-.btn-today{
+.todayBtn{
     font-size: 14px;
     width: 55px;
 }
@@ -58,11 +58,11 @@ body{
     height: 100%;
 }
 
-/*  */
+/* 날짜 삽입 공간 */
 .cal-body{
-    margin: 60px 30px 0 30px;
+    margin: 40px 30px 0 30px;
 }
-.week{
+.weekdays{
     padding-bottom: 5px;
     border-bottom: 1px solid #ccc;
     display: grid;
@@ -74,4 +74,21 @@ body{
 }
 .weekend{
     color: #a6a2a2;
+}
+.dates{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.dates div{
+    padding: 20px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+}
+.today{
+    padding: 6px;
+    border-radius: 50%;
+    background-color: #f8efba;
+    color: #000;
+    /* width: 20px; */
 }
