@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <!-- 
+        youtube 강의 참고하여 따라 만든 계산기
+        Javascript 알고리즘으로 풀이하지 않고, eval() 함수를 사용해서 간단하게 구현
+     -->
+    <div class="calculator">
+        <form name="forms" action="" class="">
+            <input type="text" class="" name="output" readonly>
+            <!--  
+                onclick="document.forms.output.value+='1'" 
+                 : 버튼 클릭 시 forms의 output의 value 값 변경 
+            -->
+            <input type="button" class="" value="1" onclick="document.forms.output.value+='1'">
+            <input type="button" class="" value="2"onclick="document.forms.output.value+='2'">
+            <input type="button" class="" value="3"onclick="document.forms.output.value+='3'">
+            <input type="button" class="operator" value="+"onclick="document.forms.output.value+='+'">
+            <input type="button" class="" value="4"onclick="document.forms.output.value+='4'">
+            <input type="button" class="" value="5"onclick="document.forms.output.value+='5'">
+            <input type="button" class="" value="6"onclick="document.forms.output.value+='6'">
+            <input type="button" class="operator" value="-"onclick="document.forms.output.value+='-'">
+            <input type="button" class="" value="7"onclick="document.forms.output.value+='7'">
+            <input type="button" class="" value="8"onclick="document.forms.output.value+='8'">
+            <input type="button" class="" value="9"onclick="document.forms.output.value+='9'">
+            <input type="button" class="operator" value="*"onclick="document.forms.output.value+='*'">
+            <input type="button" class="clear" value="AC"onclick="document.forms.output.value=''">
+            <input type="button" class="" value="0"onclick="document.forms.output.value+='0'">
+            <!-- eval() : 수식 계산하는 메서드 -->
+            <input type="button" class="operator result" value="="onclick="document.forms.output.value=eval(document.forms.output.value)">
+            <input type="button" class="operator" value="/"onclick="document.forms.output.value+='/'">
+        </form>
+    </div>
+
+</body>
+</html>
