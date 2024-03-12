@@ -51,10 +51,12 @@ ul li{
     font-size: 20px;
     height: 65px;
     text-align: center;
+    border: 1px solid black;
 }
-/* .keypad button:active{
-    opacity: 0.5;
-} */
+.keypad button:active{
+    box-shadow: 1px 1px 2px #979797;
+    opacity: 0.7;
+}
 .operator{
     background-color: #ce5280;
 }
