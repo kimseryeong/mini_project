@@ -60,7 +60,6 @@ ul li{
 .operator{
     background-color: #ce5280;
 }
-.clear{
+.clear, .calc{
     background-color: #dca2b8;
-    grid-column: span 3;
 }
