@@ -55,6 +55,10 @@ ul li{
 /* .keypad button:active{
     opacity: 0.5;
 } */
-.operator, .clear{
+.operator{
     background-color: #ce5280;
+}
+.clear{
+    background-color: #dca2b8;
+    grid-column: span 3;
 }

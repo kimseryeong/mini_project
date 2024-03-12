@@ -9,28 +9,55 @@
 
 
 */
+/**
+ * 필요한 함수 : 
+ *  1. 우선순위 반환 함수
+ *  2. 후위변환 함수
+ *  3. 후위식 계산 함수
+ */
 
-var txt = '';
+function fnPriority(operator){
+    var res = 0;
+    switch(operator){
+        case '+':
+        case '-':
+            res = 1;
+            break;
+        case '*': 
+        case '/':
+            res = 2;
+            break;
+        return res;
+    }
+}
+
+var infixTxt = ''; //중위표기법
+var postfixTxt = ''; //후위표기법
 $('.btn').on('click', function(){
     
     var className = $(this).attr('class');
     var inputTxt = $(this).text();
+    console.log(className, inputTxt);
     
     //AC 클릭 시 초기화
-    if(className.indexOf('clear') > -1){
+    // if(className.indexOf('clear') > -1){
+    if(inputTxt == 'AC'){
         $('.inout').empty();
-        txt = '';
+        infixTxt = '';
         return false;
     }
 
-    firsttxt += $(this).text();
-    console.log(className, txt);
-    
-    if(inputTxt == '*'){
-
+    if(inputTxt != '='){
+        // = 연산자 클릭할 때까지 (중위표현식)
+        infixTxt += inputTxt;
     }
-    
-    $('.inout').html(txt);
+    else{
+        //계산
+        fnCalc(infixTxt);
+    }
+    console.log(infixTxt);
+        
+    $('.inout').html(infixTxt);
 
     
 
@@ -38,7 +65,7 @@ $('.btn').on('click', function(){
 
 });
 
-function fnCalc(){
-    
+function fnCalc(infix){
+    console.log('fnCal 함수의 infix', infix);
 }
 
