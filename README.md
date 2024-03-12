@@ -28,12 +28,17 @@ html, css, javascript 활용 <br/>
 <br/><br/>
 
 ### 3. 계산기 만들어보기
-###### 24.03.10 - 12
+###### 24.03.10 - 12 (1차 기능구현 -> ⭐️ 계산 기능의 문제 발생 )
 #### 📌 기능 구현 목록
 - 간단한 사칙연산 계산기 기능
 - 두 가지 방식으로 풀이
    1) eval() 함수를 사용하는 방식
    2) 수식 계산 알고리즘을 사용하는 방식 -> 입력받은 중위표현식을 후위표현식으로 변경 후 후위표현식을 계산하는 방식으로 진행 (스택 알고리즘)
- 
+
+
+<img src="https://github.com/kimseryeong/mini_project/assets/106288108/62c5f618-e8f2-4356-a42d-cf84bdd12bae" style="width:70%;">
+<img src="https://github.com/kimseryeong/mini_project/assets/106288108/6bc206f5-716d-44d3-8957-85dd232e932d" style="width:70%;">
+<img src="https://github.com/kimseryeong/mini_project/assets/106288108/a0ea5f58-d51e-49a4-8c62-e4e7a26d7618" alt="계산기 실행 화면" style="width:70%;">
+<br>
 참고 : https://crong-dev.tistory.com/19
 https://hini7.tistory.com/146
