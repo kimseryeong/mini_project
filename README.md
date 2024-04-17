@@ -53,5 +53,5 @@ html, css, javascript 활용 <br/>
 ###### 24.04.17 (1차 기능구현)
 #### 📌 기능 구현 목록
 <img src="https://github.com/kimseryeong/mini_project/assets/106288108/1978d928-2f6a-4ac8-83cb-fd68682baaf7" style="width:70%;">
-
+<img src="https://github.com/kimseryeong/mini_project/assets/106288108/7231251e-ac1a-46d3-ae6c-22eebabc2744" style="width:70%;">
 -> 퀴즈 1~5까지 하드코딩 되어 있어서 추후 보완할 것
