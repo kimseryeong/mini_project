@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 풀기</title>
+    <link rel="stylesheet" href="../hardCoding/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="start">
+                <button class="startBtn" onclick="fnQuizStart()">Quiz Start</button>
+            </div>
+            <div class="quiz quiz1" style="display: none;">
+                <div class="remain">1 / 5</div>
+                <img src="../img/kitten.jpg" alt="kitten" class="kitten">
+                <!-- <div class="quizImg"> -->
+                <!-- </div> -->
+                <div class="choice">
+                    <div class="">
+                        <input type="radio" class="choice2" name="chkQuiz1" id="chkQuiz1_2" value="bear">
+                        <label for="chkQuiz1_2">bear</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice1" name="chkQuiz1" id="chkQuiz1_1" value="kitten">
+                        <label for="chkQuiz1_1">kitten</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice3" name="chkQuiz1" id="chkQuiz1_3" value="rabbit">
+                        <label for="chkQuiz1_3">rabbit</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice4" name="chkQuiz1" id="chkQuiz1_4" value="tiger"> 
+                        <label for="chkQuiz1_4">tiger</label>
+                    </div>
+                </div>
+                <div class="nextBtn">
+                    <button type="button" class="" onclick="fnQuizNext('1', this)">Next</button>
+                </div>
+            </div>
+            <div class="quiz quiz2" style="display: none;">
+                <div class="remain">2 / 5</div>
+                <img src="../img/tiger.jpg" alt="tiger" class="tiger">
+                <!-- <div class="quizImg">
+                </div> -->
+                <div class="choice">
+                    <div class="">
+                        <input type="radio" class="choice2" name="chkQuiz2" id="chkQuiz2_2" value="bear">
+                        <label for="chkQuiz2_2">bear</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice3" name="chkQuiz2" id="chkQuiz2_3" value="monkey">
+                        <label for="chkQuiz2_3">monkey</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice4" name="chkQuiz2" id="chkQuiz2_4" value="tiger"> 
+                        <label for="chkQuiz2_4">tiger</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice1" name="chkQuiz2" id="chkQuiz2_1" value="kitten">
+                        <label for="chkQuiz2_1">kitten</label> 
+                    </div>
+                </div>
+                <div class="nextBtn">
+                    <button type="button" class="" onclick="fnQuizNext('2', this)">Next</button>
+                </div>
+            </div>
+            <div class="quiz quiz3" style="display: none;">
+                <div class="remain">3 / 5</div>
+                <img src="../img/polar_bear.jpg" alt="polar_bear" class="polar_bear">
+                <!-- <div class="quizImg">
+                </div> -->
+                <div class="choice">
+                    <div class="">
+                        <input type="radio" class="choice2" name="chkQuiz3" id="chkQuiz3_2" value="bear">
+                        <label for="chkQuiz3_2">bear</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice3" name="chkQuiz3" id="chkQuiz3_3" value="monkey">
+                        <label for="chkQuiz3_3">monkey</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice1" name="chkQuiz3" id="chkQuiz3_1" value="polar_bear">
+                        <label for="chkQuiz3_1">polar bear</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice4" name="chkQuiz3" id="chkQuiz3_4" value="lion"> 
+                        <label for="chkQuiz3_4">lion</label>
+                    </div>
+                </div>
+                <div class="nextBtn">
+                    <button type="button" class="" onclick="fnQuizNext('3', this)">Next</button>
+                </div>
+            </div>
+            <div class="quiz quiz4" style="display: none;">
+                <div class="remain">4 / 5</div>
+                <img src="../img/panda.jpg" alt="panda" class="panda">
+                <!-- <div class="quizImg">
+                </div> -->
+                <div class="choice">
+                    <div class="">
+                        <input type="radio" class="choice1" name="chkQuiz4" id="chkQuiz4_1" value="polar_bear">
+                        <label for="chkQuiz4_1">polar bear</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice2" name="chkQuiz4" id="chkQuiz4_2" value="panda">
+                        <label for="chkQuiz4_2">panda</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice3" name="chkQuiz4" id="chkQuiz4_3" value="monkey">
+                        <label for="chkQuiz4_3">monkey</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice4" name="chkQuiz4" id="chkQuiz4_4" value="tiger"> 
+                        <label for="chkQuiz4_4">tiger</label>
+                    </div>
+                </div>
+                <div class="nextBtn">
+                    <button type="button" class="" onclick="fnQuizNext('4', this)">Next</button>
+                </div>
+            </div>
+            <div class="quiz quiz5" style="display: none;">
+                <div class="remain">5 / 5</div>
+                <img src="../img/lion.jpg" alt="lion" class="lion">
+                <!-- <div class="quizImg">
+                </div> -->
+                <div class="choice">
+                    <div class="">
+                        <input type="radio" class="choice1" name="chkQuiz5" id="chkQuiz5_1" value="lion">
+                        <label for="chkQuiz5_1">lion</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice2" name="chkQuiz5" id="chkQuiz5_2" value="panda">
+                        <label for="chkQuiz5_2">panda</label>
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice3" name="chkQuiz5" id="chkQuiz5_3" value="tiger">
+                        <label for="chkQuiz5_3">tiger</label> 
+                    </div>
+                    <div class="">
+                        <input type="radio" class="choice4" name="chkQuiz5" id="chkQuiz5_4" value="monkey"> 
+                        <label for="chkQuiz5_4">monkey</label>
+                    </div>
+                </div>
+                <div class="nextBtn">
+                    <button type="button" class="" onclick="fnQuizNext('5', this)">Submit</button>
+                </div>
+            </div>
+            <div class="result" style="display: none;">
+                <h1 class="title">Quiz Result</h1>
+                <div class="answerRes">
+                    <div class="correct">
+                        <span>Correct : </span>
+                        <span class="correctNum"></span>
+                    </div>
+                    <div class="wrong">
+                        <span>Wrong : </span>
+                        <span class="wrongNum"></span>
+                    </div>
+                </div>
+
+                <div class="restartBtn">
+                    <button type="button" class="" onclick="fnQuizRestart()">Restart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../hardCoding/main.js"></script>
+</body>
+</html>
