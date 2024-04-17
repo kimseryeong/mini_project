@@ -9,6 +9,13 @@ button{
     border: 0;
     background-color: transparent;
 }
+button:active{
+    box-shadow: 1px 1px 1px lightslategray;
+}
+button:hover{
+    background-color: #f6e57c;
+    border-radius: 80px;
+}
 
 .wrapper{
     min-height: 97dvh; /* 수직 가운데 정렬 */
