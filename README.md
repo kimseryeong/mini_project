@@ -2,7 +2,9 @@
 
 [프론트엔드 초보 개발자 공부] - 미니 프로젝트 진행하기
 ---
-html, css, javascript 활용 <br/>
+- html, css, javascript, jquery 1.12.4 활용
+- visual studio code
+<br/>
 
 
 ### 1. TODO LIST 만들어보기
@@ -12,7 +14,7 @@ html, css, javascript 활용 <br/>
 - 체크박스로 완료 여부 구분하기
 - 'x' 버튼으로 해당 todo 삭제
 <img src="https://github.com/kimseryeong/mini_project/assets/106288108/2db6c03c-f696-49af-a2a8-796452dae1fc" alt="투두리스트 실행 화면" style="width:70%;">
----
+
 
 <br/><br/>
 
@@ -24,7 +26,7 @@ html, css, javascript 활용 <br/>
 - 현재 년도, 월 표시
 <img src="https://github.com/kimseryeong/mini_project/assets/106288108/02ba4785-97a2-4fd9-b904-59ce6d79ca33" alt="캘린더 실행 화면" style="width:70%;">
 참고 : https://velog.io/@eungbi/Javascript-%EC%BA%98%EB%A6%B0%EB%8D%94-%EB%A7%8C%EB%93%A4%EA%B8%B0-1
----
+
 
 <br/><br/>
 
@@ -45,7 +47,7 @@ html, css, javascript 활용 <br/>
 참고 : 
 - https://crong-dev.tistory.com/19
 - https://hini7.tistory.com/146
----
+
 
 <br/><br/>
 
