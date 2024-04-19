@@ -18,12 +18,12 @@
 
 
 
-var infixTxt = ''; //중위표기법
-var postfixTxt = ''; //후위표기법
+let infixTxt = ''; //중위표기법
+let postfixTxt = ''; //후위표기법
 $('.btn').on('click', function(){
     $('.inout').html('');
 
-    var inputTxt = $(this).text();
+    let inputTxt = $(this).text();
     
     //AC 클릭 시 초기화
     if(inputTxt == 'AC'){
@@ -39,7 +39,7 @@ $('.btn').on('click', function(){
     }
     else{
         //계산
-        var result = fnCalculate(infixTxt);
+        let result = fnCalculate(infixTxt);
         $('.inout').html(result);
         infixTxt = result;
         // return false;
@@ -51,10 +51,10 @@ $('.btn').on('click', function(){
 
 //중위표현식 -> 후위표현식 변환
 function fnCalculate(infix){
-    var infixStr = infix.split('')
-    var res = '';
-    var stack = [];
-    var postfix = [];
+    let infixStr = infix.split('')
+    let res = '';
+    let stack = [];
+    let postfix = [];
 
     
     /**
@@ -65,7 +65,7 @@ function fnCalculate(infix){
      *      -> 넣으려는 연산자 >  스택 상단 연산자 : 넣으려는 연산자 push()
      * 더이상 처리할 문자가 없고 스택에 연산자가 있는 경우 res에 담기
      */
-    for(var i = 0; i < infixStr.length; i++){
+    for(let i = 0; i < infixStr.length; i++){
         
         if(!isNaN(infixStr[i])){
             res += infixStr[i];
@@ -73,7 +73,7 @@ function fnCalculate(infix){
         }
         else{
             while(fnPriority(infixStr[i]) <= fnPriority(stack[stack.length - 1]) && stack.length > 0){
-                // var popVal = stack.pop();
+                // let popVal = stack.pop();
                 // res += popVal;
                 // postfix.push(popVal);
                 res += stack.pop();
@@ -82,7 +82,7 @@ function fnCalculate(infix){
         }
         if(i == infixStr.length-1 && stack.length > 0){
             res += stack.pop();
-            // var popVal = stack.pop();
+            // let popVal = stack.pop();
             // res += popVal;
             // postfix.push(popVal);
         }
@@ -90,7 +90,7 @@ function fnCalculate(infix){
     }
     console.log('res: ', res);
     // console.log('postfix: ', postfix);
-    var postfixRes = fnCalcPostfix(res);
+    let postfixRes = fnCalcPostfix(res);
     return postfixRes;
 }
 
@@ -101,19 +101,19 @@ function fnCalcPostfix(postfix){
      * 연산자는 스택에서 두 개의 피연산자를 꺼내 계산 후 결과를 다시 스택에 넣기
      */
 
-    // var arr = [];
-    var stack=[];
-    var res = 0;
+    // let arr = [];
+    let stack=[];
+    let res = 0;
     
     //debugger;
-    for(var char of postfix){
+    for(let char of postfix){
         //숫자라면
         if(!isNaN(char)){
             stack.push(parseFloat(char)); //문자가 아닌 숫자로
         }
         else{
-            var num1 = stack.pop();
-            var num2 = stack.pop();
+            let num1 = stack.pop();
+            let num2 = stack.pop();
             switch(char){
                 case '+':
                     stack.push(num2 + num1);
@@ -139,7 +139,7 @@ function fnCalcPostfix(postfix){
 
 //연산자 우선순위 반환
 function fnPriority(operator){
-    var res = 0;
+    let res = 0;
     switch(operator){
         case '+':
         case '-':

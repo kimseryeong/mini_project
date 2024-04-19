@@ -1,8 +1,8 @@
 //중위표현식 -> 후위표현식 변환
 function fnPostfix(infix){
-    var infixStr = infix.split('')
-    var res = '';
-    var stack = [];
+    let infixStr = infix.split('')
+    let res = '';
+    let stack = [];
 
     
     /**
@@ -13,7 +13,7 @@ function fnPostfix(infix){
      *      -> 넣으려는 연산자 >  스택 상단 연산자 : 넣으려는 연산자 push()
      * 더이상 처리할 문자가 없고 스택에 연산자가 있는 경우 res에 담기
      */
-    for(var i = 0; i < infixStr.length; i++){
+    for(let i = 0; i < infixStr.length; i++){
         
         if(!isNaN(infixStr[i])){
             res += infixStr[i];
@@ -34,7 +34,7 @@ function fnPostfix(infix){
 
 //연산자 우선순위 반환
 function fnPriority(operator){
-    var res = 0;
+    let res = 0;
     switch(operator){
         case '+':
         case '-':
