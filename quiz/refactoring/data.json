@@ -1,0 +1,29 @@
+{
+    "quizes" : [
+        {
+            "order": 1
+            ,"correct": "kitten"
+            ,"image": "../img/kitten.jpg"
+        }
+        ,{
+            "order": 2
+            ,"correct": "lion"
+            ,"image": "../img/lion.jpg"
+        }
+        ,{
+            "order": 3
+            ,"correct": "panda"
+            ,"image": "../img/panda.jpg"
+        }
+        ,{
+            "order": 4
+            ,"correct": "polar bear"
+            ,"image": "../img/polar_bear.jpg"
+        }
+        ,{
+            "order": 5
+            ,"correct": "tiger"
+            ,"image": "../img/tiger.jpg"
+        }
+    ]
+}
