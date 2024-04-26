@@ -1,10 +1,10 @@
 $(document).ready(function(){});
 
 //현재 일, 월, 년도 
-var today = new Date();
-var currentMonth = today.getMonth(); //getMonth() : 1월 = 0 부터 숫자로 표시
-var currentYear = today.getFullYear();
-var currentDate = today.getDate();
+let today = new Date();
+let currentMonth = today.getMonth(); //getMonth() : 1월 = 0 부터 숫자로 표시
+let currentYear = today.getFullYear();
+let currentDate = today.getDate();
 
 fnRenderCal();
 
@@ -50,11 +50,11 @@ function fnRenderCal(){
     const year = today.getFullYear();
     const month = today.getMonth();
 
-    var firstDateOfMonth = new Date(currentYear, currentMonth, 1); //현재 월의 첫번째 날짜 값 가져오기
+    let firstDateOfMonth = new Date(currentYear, currentMonth, 1); //현재 월의 첫번째 날짜 값 가져오기
     
-    var firstDayOfWeek = firstDateOfMonth.getDay(); //현재 월의 첫번째 날짜 요일 가져오기 (숫자 1 = 월)
+    let firstDayOfWeek = firstDateOfMonth.getDay(); //현재 월의 첫번째 날짜 요일 가져오기 (숫자 1 = 월)
     
-    var daysInMonth = new Date(currentYear, currentMonth+1, 0).getDate(); //현재 월의 총일수 값 가져오기
+    let daysInMonth = new Date(currentYear, currentMonth+1, 0).getDate(); //현재 월의 총일수 값 가져오기
 
     //날짜가 들어갈 공간 초기화
     $('#dates').empty();
@@ -92,7 +92,7 @@ function fnRenderCal(){
 
 //getMonth() 출력값 숫자 -> 영문 변경
 function fnSwtichMonth(){
-    var engMonth = '';
+    let engMonth = '';
     switch (currentMonth) {
         case 0:
             engMonth = 'January';
