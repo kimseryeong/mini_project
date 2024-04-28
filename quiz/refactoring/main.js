@@ -65,14 +65,33 @@ btn.addEventListener('click', (e) => {
 
     // quizes.question.filter() -> val.order 와
     // e.target.classList
-    const seq = e.target.dataset.order;
-    console.log(`seq: ${seq}`)
-    quizes.question.filter((val) => val.order == seq).map((val) => loadQuiz(val, seq));
+
+    const dataset = e.target.dataset;
+    const seq = Number(dataset.order);
+    const type = dataset.type;
+
+    console.log(`seq: ${seq}, type: ${typeof seq}`)
+    console.log(`type: ${type}, type: ${typeof type}`)
+    
+
+    if(seq === 0 && type === 'prev'){
+        //첫번째 화면으로
+        location.href = location.href;
+    }
+    else if(type === 'prev' || type === 'next'){
+        quizes.question.filter((val) => val.order === seq).map((val) => loadQuiz(val, seq));
+    }
+    else if(type === 'submit'){
+        loadResult();
+    }
+    
+
+
 })
 
 //퀴즈 로드 함수
 function loadQuiz(val, order){
-    console.log(`퀴즈 로드 val: ${val}`)
+    console.log(`퀴즈 로드 val: ${val}, ${order}`)
 
     remain.innerHTML = `${val.order} / 5`;
     img.innerHTML = `<img src="${val.image}" alt="${val.correct}">`;
@@ -88,10 +107,11 @@ function createBtn(order){
         case 1:
         case 2:
         case 3:
-            return `<button class="prevBtn" data-order="${order + 1}" data-type="prev">Prev</button>
+            return `<button class="prevBtn" data-order="${order - 1}" data-type="prev">Prev</button>
                     <button class="nextBtn" data-order="${order + 1}" data-type="next">Next</button>`;
         case 4:
-            return `<button class="submitBtn" data-type="submit">Submit</button>`;
+            return `<button class="prevBtn" data-order="${order - 1}" data-type="prev">Prev</button>
+                    <button class="submitBtn" data-type="submit">Submit</button>`;
         default:
             new Error('error !!!!!');
     }
@@ -109,5 +129,7 @@ function loadChoices(item, index, order){
 
 //최종 결과 로드 함수
 function loadResult(){
-
+    console.log('최종결과');
+    
+    quizContainer.classList.add('invisible');
 }
