@@ -47,6 +47,7 @@ const remain = document.querySelector('.remain');
 const img = document.querySelector('.img');
 const choice = document.querySelector('.choice');
 const btn = document.querySelector('.buttons');
+const resultContainer = document.querySelector('.result');
 
 //퀴즈 시작 버튼 클릭
 const startBtn = document.querySelector('.startBtn');
@@ -127,9 +128,17 @@ function loadChoices(item, index, order){
     `;
 }
 
+const answerRes = document.querySelector('.answerRes');
+
 //최종 결과 로드 함수
 function loadResult(){
     console.log('최종결과');
     
     quizContainer.classList.add('invisible');
+    quizContainer.classList.remove('invisible');
+
+    answerRes.innerHTML = `
+        <span>정답 : , 오답 : </span>
+        <button class = "restartBtn" data-type="restart">Restart</button>
+    `;
 }
