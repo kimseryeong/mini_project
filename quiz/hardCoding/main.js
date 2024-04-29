@@ -2,7 +2,7 @@
 //퀴즈 시작 함수
 function fnQuizStart(){
 
-    $('.start').hide()
+    $('.startBtn').hide()
     $('.quiz1').show()
 }
 

@@ -60,8 +60,9 @@ button:hover{
     padding: 20px 0;
 }
 .buttons{
-    display: flex;
-    margin: auto;
+    /* display: flex;
+    margin: auto; */
+    text-align: center;
 }
 
 .nextBtn, .prevBtn, .submitBtn{

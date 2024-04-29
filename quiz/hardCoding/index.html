@@ -10,12 +10,15 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="start">
-                <button class="startBtn" onclick="fnQuizStart()">Quiz Start</button>
-            </div>
+            <button class="startBtn" onclick="fnQuizStart()">Quiz Start</button>
+            <!-- <div class="start">
+            </div> -->
             <div class="quiz quiz1" style="display: none;">
                 <div class="remain">1 / 5</div>
-                <img src="../img/kitten.jpg" alt="kitten" class="kitten">
+                <div class="img">
+                    <img src="../img/kitten.jpg" alt="kitten" class="kitten">
+
+                </div>
                 <!-- <div class="quizImg"> -->
                 <!-- </div> -->
                 <div class="choice">
@@ -36,8 +39,8 @@
                         <label for="chkQuiz1_4">tiger</label>
                     </div>
                 </div>
-                <div class="nextBtn">
-                    <button class="" onclick="fnQuizNext('1', this)">Next</button>
+                <div class="buttons">
+                    <button class="nextBtn" onclick="fnQuizNext('1', this)">Next</button>
                 </div>
             </div>
             <div class="quiz quiz2" style="display: none;">

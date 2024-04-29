@@ -7,18 +7,16 @@
     <title>Quiz_refactoring</title>
     <script defer src="main.js"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="container">
-            <button class="startBtn" data-type="start">퀴즈 풀기</button>
-            <!-- <div class="start">
-            </div> -->
             <div class="quiz invisible">
                 <div class="remain"></div>
                 <div class="img"></div>
                 <div class="choice">
-                    <div>
+                    <!-- <div>
                         <input type="radio" class="choice1" name="chkQuiz1" id="choice1" value="">
                         <label for="choice1"></label> 
                     </div>
@@ -33,17 +31,21 @@
                     <div>
                         <input type="radio" class="choice4" name="chkQuiz1" id="choice4" value=""> 
                         <label for="choice4"></label>
-                    </div>
+                    </div> -->
                 </div>
+                <!-- <button class="prevBtn" data-seq="1" data-btn-type="prev">Prev</button>
                 <div class="buttons">
-                    <button class="prevBtn" data-type="prev">Prev</button>
-                    <button class="nextBtn" data-type="next">Next</button>
                 </div>
+                <button class="nextBtn" data-seq="1" data-btn-type="next">Next</button> -->
             </div>
-            <div class="result invisible">
-                <div class="answerRes"></div>
+            <div class="answerRes invisible"></div>
+            <!-- <div class="result invisible">
+            </div> -->
+            <div class="buttons">
+                <button class="startBtn" data-seq="0" data-btn-type="start">퀴즈 풀기</button>
             </div>
         </div>
     </div>
+
 </body>
 </html>
