@@ -57,3 +57,6 @@
 <img src="https://github.com/kimseryeong/mini_project/assets/106288108/1978d928-2f6a-4ac8-83cb-fd68682baaf7" style="width:70%;">
 <img src="https://github.com/kimseryeong/mini_project/assets/106288108/7231251e-ac1a-46d3-ae6c-22eebabc2744" style="width:70%;">
 -> 퀴즈 1~5까지 하드코딩 되어 있어서 추후 보완할 것
+
+###### 24.04.29 (2차 기능구현 - 보완)
+-> 퀴즈 하드코딩 했던 소스를 Class 생성해서 배열로 묶어주고 자바스크립트 함수 생성 및 수정
