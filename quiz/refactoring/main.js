@@ -89,7 +89,7 @@ function fnShowResult(){
 function createQuizHtml(quiz, seq){
     console.log(quiz);
     
-    const options = document.querySelectorAll(`input[name="option${seq}"]`);
+    const options = document.getElementsByName(`option${seq}`);
     console.log(options);
     // return;
 
