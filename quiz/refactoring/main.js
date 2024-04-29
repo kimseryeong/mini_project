@@ -103,7 +103,7 @@ function fnCheckRight(order){
         wrongNum += 1;
     }
     
-    console.log(rightNum, wrongNum);
+    // console.log(rightNum, wrongNum);
     return {right: rightNum, wrong: wrongNum};
 }
 //결과보기 함수
@@ -140,7 +140,7 @@ function createChoicesHtml(option, index, seq){
 
 //버튼 HTML
 function createBtnHtml(seq){
-    console.log(`create btn seq : ${seq}, typeof: ${typeof seq}`);
+    // console.log(`create btn seq : ${seq}, typeof: ${typeof seq}`);
     switch(seq){
         case 1:
         case 2:
