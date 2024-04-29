@@ -66,7 +66,7 @@ button:hover{
     text-align: center;
 }
 
-.nextBtn, .prevBtn, .submitBtn{
+.nextBtn, .prevBtn, .submitBtn, .restartBtn{
     text-align: center;
     font-size: 16px;
     width: 100px;
@@ -84,30 +84,15 @@ button:hover{
 .answerRes{
     margin: 36px;
     padding: 10px;
-    font-size: 25px;
+    text-align: center;
+    border: 1px solid #f1e184;
+    /* font-size: 25px; */
 }
 .correct, .wrong{
     padding: 15px;
 }
 .title{
     margin-top: 60px;
-}
-.restartBtn{
-    width: 56.2%;
-    align-items: center;
-    position: fixed;
-    bottom: auto;
-    text-align: center;
-    padding: 15px;
-    margin: 10px 0;
-}
-.restartBtn button{
-    font-size: 16px;
-    width: 200px;
-    height: 50px;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 30px;
 }
 .invisible{
     display: none;
